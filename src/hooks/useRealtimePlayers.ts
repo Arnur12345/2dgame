@@ -1,6 +1,6 @@
 // Хук для работы с игроками в реальном времени
 import { useState, useEffect, useCallback } from 'react';
-import { type Player, playerService } from '../services/localMultiplayer';
+import { type Player, playerService } from '../services/firebase';
 
 export const useRealtimePlayers = () => {
   const [players, setPlayers] = useState<Record<string, Player>>({});

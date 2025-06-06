@@ -1,6 +1,6 @@
 // Основной компонент игрового поля
 import React, { useRef, useEffect, useCallback } from 'react';
-import { type Player } from '../services/localMultiplayer';
+import { type Player } from '../services/firebase';
 
 interface GameFieldProps {
   players: Record<string, Player>;

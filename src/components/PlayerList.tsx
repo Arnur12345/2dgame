@@ -1,6 +1,6 @@
 // Компонент списка активных игроков
 import React from 'react';
-import { type Player, demoService } from '../services/localMultiplayer';
+import { type Player } from '../services/firebase';
 
 interface PlayerListProps {
   players: Record<string, Player>;
@@ -97,27 +97,6 @@ export const PlayerList: React.FC<PlayerListProps> = ({
           <div className="key">S</div>
           <div className="key">D</div>
         </div>
-      </div>
-
-      <div className="demo-controls">
-        <h4>🤖 Демо режим</h4>
-        <div className="demo-buttons">
-          <button 
-            className="demo-button"
-            onClick={() => demoService.addDemoBots()}
-          >
-            ➕ Добавить ботов
-          </button>
-          <button 
-            className="demo-button clear"
-            onClick={() => demoService.clearAllPlayers()}
-          >
-            🗑️ Очистить всех
-          </button>
-        </div>
-        <p className="demo-hint">
-          Добавьте ботов для демонстрации мультиплеера или откройте игру в нескольких вкладках!
-        </p>
       </div>
     </div>
   );

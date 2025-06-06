@@ -1,7 +1,7 @@
 // Хук для управления движением игрока
 import { useState, useCallback } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { playerService } from '../services/localMultiplayer';
+import { playerService } from '../services/firebase';
 
 interface UsePlayerMovementProps {
   playerId: string;

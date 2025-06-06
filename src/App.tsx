@@ -5,7 +5,7 @@ import { GameField } from './components/GameField';
 import { PlayerList } from './components/PlayerList';
 import { useRealtimePlayers } from './hooks/useRealtimePlayers';
 import { usePlayerMovement } from './hooks/usePlayerMovement';
-import { generateRandomColor, type Player } from './services/localMultiplayer';
+import { generateRandomColor, type Player } from './services/firebase';
 import './App.css';
 
 // Константы игры
