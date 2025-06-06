@@ -1,5 +1,5 @@
 // Хук для управления движением игрока
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { playerService } from '../services/localMultiplayer';
 

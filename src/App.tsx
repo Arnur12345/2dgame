@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { LoginForm } from './components/LoginForm';
 import { GameField } from './components/GameField';
 import { PlayerList } from './components/PlayerList';
 import { useRealtimePlayers } from './hooks/useRealtimePlayers';
 import { usePlayerMovement } from './hooks/usePlayerMovement';
-import { generateRandomColor, type Player, demoService } from './services/localMultiplayer';
+import { generateRandomColor, type Player } from './services/localMultiplayer';
 import './App.css';
 
 // Константы игры

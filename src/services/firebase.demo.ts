@@ -67,7 +67,7 @@ export const playerService = {
   subscribeToPlayers: (callback: (players: Record<string, Player>) => void) => {
     const playersRef = ref(database, 'players');
     
-    const unsubscribe = onValue(playersRef, (snapshot) => {
+    onValue(playersRef, (snapshot) => {
       try {
         const data = snapshot.val();
         callback(data || {});
